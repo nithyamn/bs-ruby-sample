@@ -7,7 +7,11 @@ build_name = ENV['BROWSERSTACK_BUILD_NAME']
 browserstack_local = ENV['BROWSERSTACK_LOCAL']
 browserstack_local_identifier = ENV['BROWSERSTACK_LOCAL_IDENTIFIER']
 
-
+puts(username)
+puts(accessKey)
+puts(build_name)
+puts(browserstack_local)
+puts(browserstack_local_identifier)
 caps = Selenium::WebDriver::Remote::Capabilities.new
 caps["os"] = "Windows"
 caps["os_version"] = "10"
